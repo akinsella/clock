@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    UILabel *hoursAndMinutesLabel;
+    UILabel *secondsLabel;
+}
 
+@property (nonatomic, retain) IBOutlet UILabel *hoursAndMinutesLabel;
+@property (nonatomic, retain) IBOutlet UILabel *secondsLabel;
+@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+
+- (void)updateClock;
+    
 @end

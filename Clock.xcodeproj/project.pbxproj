@@ -37,20 +37,20 @@
 		5494FC441582B09000A4E43F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5494FC461582B09000A4E43F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5494FC481582B09000A4E43F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5494FC4C1582B09000A4E43F /* Clock-Info.plist */ = {isa = PBXFileReference; path = "Clock-Info.plist"; sourceTree = "<group>"; };
+		5494FC4C1582B09000A4E43F /* Clock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clock-Info.plist"; sourceTree = "<group>"; };
 		5494FC4E1582B09000A4E43F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5494FC501582B09000A4E43F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5494FC521582B09000A4E43F /* Clock-Prefix.pch */ = {isa = PBXFileReference; path = "Clock-Prefix.pch"; sourceTree = "<group>"; };
-		5494FC531582B09000A4E43F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5494FC521582B09000A4E43F /* Clock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clock-Prefix.pch"; sourceTree = "<group>"; };
+		5494FC531582B09000A4E43F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5494FC541582B09000A4E43F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5494FC561582B09000A4E43F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		5494FC561582B09000A4E43F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5494FC571582B09000A4E43F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5494FC5A1582B09000A4E43F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		5494FC611582B09000A4E43F /* ClockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5494FC621582B09000A4E43F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5494FC6A1582B09000A4E43F /* ClockTests-Info.plist */ = {isa = PBXFileReference; path = "ClockTests-Info.plist"; sourceTree = "<group>"; };
+		5494FC6A1582B09000A4E43F /* ClockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockTests-Info.plist"; sourceTree = "<group>"; };
 		5494FC6C1582B09000A4E43F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5494FC6E1582B09000A4E43F /* ClockTests.h */ = {isa = PBXFileReference; path = ClockTests.h; sourceTree = "<group>"; };
+		5494FC6E1582B09000A4E43F /* ClockTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockTests.h; sourceTree = "<group>"; };
 		5494FC6F1582B09000A4E43F /* ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
