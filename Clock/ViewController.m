@@ -8,23 +8,20 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 
-@synthesize dateFormatter;
 @synthesize hoursAndMinutesLabel;
 @synthesize secondsLabel;
+@synthesize walkTimer;
+@synthesize dateFormatter;
 
 -(void)updateClock {
     NSDate *currentDate = [[NSDate alloc] init];
     
-    [dateFormatter setDateFormat:@"hh:mm"];
-    self.hoursAndMinutesLabel.text = [dateFormatter stringFromDate:currentDate];
-    [dateFormatter setDateFormat:@"ss"];
-    self.secondsLabel.text = [dateFormatter stringFromDate:currentDate];
+    [self.dateFormatter setDateFormat:@"hh:mm"];
+    self.hoursAndMinutesLabel.text = [self.dateFormatter stringFromDate:currentDate];
+    [self.dateFormatter setDateFormat:@"ss"];
+    self.secondsLabel.text = [self.dateFormatter stringFromDate:currentDate];
     
     // ARC forbids explicits release  
     // [currentDate release];
@@ -35,6 +32,7 @@
                                              target:self 
                                            selector:@selector(updateClock) 
                                            userInfo:nil repeats:YES];
+    [self setWalkTimer: timer];
     
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
@@ -43,14 +41,20 @@
     [super viewWillAppear:animated];
 }
 
+- (void) viewDidDisappear:(BOOL)animated {
+    [[self walkTimer] invalidate];
+    [self setWalkTimer:nil]; 
+}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    self.dateFormatter = dateFormatter;
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    
+    [self setDateFormatter: df];
     
     // [dateFormatter release];
     

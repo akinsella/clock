@@ -431,6 +431,7 @@
 				5494FC751582B09000A4E43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5494FC761582B09000A4E43F /* Build configuration list for PBXNativeTarget "ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +440,7 @@
 				5494FC781582B09000A4E43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

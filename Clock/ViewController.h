@@ -15,7 +15,11 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *hoursAndMinutesLabel;
 @property (nonatomic, retain) IBOutlet UILabel *secondsLabel;
+
 @property (nonatomic, retain) NSDateFormatter *dateFormatter;
+@property (nonatomic, retain) NSTimer *walkTimer;
+
+
 
 - (void)updateClock;
     
